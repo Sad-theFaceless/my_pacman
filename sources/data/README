@@ -1,41 +1,43 @@
 MY_PACMAN
 
-NOM
-     my_pacman - jeu en console basé sur le jeu pacman
+NAME
+     my_pacman - Pac-Man game written in C, using the ncurses.
 
 SYNOPSIS
      ./my_pacman.sh
 
 DESCRIPTION
-     my_pacman est un jeu en ASCII.
+     my_pacman is an ASCII console game.
 
-     Le but est d'obtenir le meilleur score.
+     The goal is to obtain the best score.
 
-     Pour se déplacer, utiliser au choix :
-     - les flèches directionnelles
-     - ZQSD (clavier AZERTY)
+     In order to move, you can use either:
+     - the directional arrows
+     - WASD (or equivalent on non-QWERTY keyboards)
 
-     Appuyez sur ECHAP pour quitter.
+     Press ESC to quit.
 
-     Tableau des scores :
-     10 pts : Pac-gommes
-     50 pts : Super pac-gommes
-     100 pts : Cerise
-     200 pts : Fantôme apeuré
-     300 pts : Fraise (à partir du niveau 2)
-     500 pts : Orange (à partir du niveau 3)
-     700 pts : Pomme (à partir du niveau 5)
-     1000 pts : Melon (à partir du niveau 7)
-     2000 pts : Galboss (à partir du niveau 9)
-     3000 pts : Cloche (à partir du niveau 11)
-     5000 pts : Clé (à partir du niveau 13)
+     Scoreboard :
+     10 pts : Pac-gum
+     50 pts : Super pac-gum
+     100 pts : Cherry
+     200 pts : Fearful Ghost
+     300 pts : Strawberry (level 2+)
+     500 pts : Orange (level 3+)
+     700 pts : Apple (level 5+)
+     1000 pts : Melon (level 7+)
+     2000 pts : Galboss (level 9+)
+     3000 pts : Bell (level 11+)
+     5000 pts : Key (level 13+)
 
-     Quand un Fantôme vous touche, vous perdez une vie.
+     If a Ghost touches you, you lose a life.
 
-     Une vie est gagnée tous les 10000 points.
+     You gain +1 life every 10.000 points.
 
-     Mangez toutes les pac-gommes pour passer un niveau.
+     Eat all the pac-gums to get to the next level.
 
-     Une augmentation de niveau entraîne :
-     - une durée inférieure des super pac-gommes
-     - une durée inférieure au mode scatter des fantômes
+     Getting to the next level leads to:
+     - lowered super pac-gums duration (cap at level 21)
+     - more aggressive Ghost AIs (cap at level 16)
+
+     Each Ghost has its own AI.
